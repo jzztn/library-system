@@ -3,6 +3,7 @@ import Hero from "../components/Hero"
 import Advantages from "../components/Advantages"
 import Footer from "../components/Footer"
 import About from "../components/About"
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -18,8 +19,8 @@ export default function Home() {
       <Advantages />
       <Footer />
       <div className="flex gap-2">
-        <a href="/users/students/books" className="hover:text-blue-500">STUDENT ACCOUNT</a>
-        <a href="/users/admin/addAdmin" className="hover:text-blue-500">ADMIN ACCOUNT</a>
+        <Link href="/users/students/books" className="hover:text-blue-500">STUDENT ACCOUNT</Link>
+        <Link href="/users/admin/addAdmin" className="hover:text-blue-500">ADMIN ACCOUNT</Link>
       </div>
     </div>
   )
